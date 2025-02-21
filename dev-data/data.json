@@ -1,7 +1,7 @@
 [
     {
         "id": 0,
-        "productName": "アボガド",
+        "productName": "Fresh Avocados",
         "image": "🥑",
         "from": "スペイン",
         "nutrients": "ビタミン B, ビタミン K",
@@ -12,7 +12,7 @@
     },
     {
         "id": 1,
-        "productName": "チーズ",
+        "productName": "Goat and Sheep Cheese",
         "image": "🧀",
         "from": "ポルトガルご",
         "nutrients": "ビタミン A, Calcium",
@@ -23,7 +23,7 @@
     },
     {
         "id": 2,
-        "productName": "ブロッコリー",
+        "productName": "Apollo Broccoli",
         "image": "🥦",
         "from": "ポルトガルゴ",
         "nutrients": "ビタミン C, ビタミン K",
@@ -34,7 +34,7 @@
     },
     {
         "id": 3,
-        "productName": "人参",
+        "productName": "Baby Carrots",
         "image": "🥕",
         "from": "フランス",
         "nutrients": "ビタミン A, ビタミン K",
@@ -45,7 +45,7 @@
     },
     {
         "id": 4,
-        "productName": "とうもろこし",
+        "productName": "Sweet Corncobs",
         "image": "🌽",
         "from": "ドイツ",
         "nutrients": "ビタミン C, Magnesium",

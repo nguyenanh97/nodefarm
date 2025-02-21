@@ -2,14 +2,21 @@ const http = require('http')
 const url = require('url')
 const fs = require('fs')
 const replaceTemplate = require('./modules/replaceTemplate')
+const slugify = require('slugify')
 // đường dẫn đến file tuyệt đối
 const tempOver = fs.readFileSync(`${__dirname}/templates/template-overview.html`, 'utf-8')
 const tempCard = fs.readFileSync(`${__dirname}/templates/template-card.html`, 'utf-8')
 const tempProduct = fs.readFileSync(`${__dirname}/templates/template-product.html`, 'utf-8')
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8')
 const dataObj = JSON.parse(data)
+const slugs = dataObj.map(el => slugify(el.productName, { lower: true }))
+console.log(slugs)
+
+
+
+
 const server = http.createServer((req, res) => {
-    // 
+    // đường dẫn URL phía trước ? 
     const { query, pathname } = url.parse(req.url, true)
     // OverView Page 
     if (pathname === '/' || pathname === '/overview') {
